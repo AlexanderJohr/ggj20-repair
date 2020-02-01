@@ -1,6 +1,0 @@
-You can import a model in 3D Studio Max with customized materials for Corona.
-
-1. Unzip all files from the archive PB118_wrenchs_low.zip into one folder.
-(Note that PB118_wrenchs_low.obj file and PB118_wrenchs_low_max.fbx must be in the same folder.)
-2. Make sure currently selected render is Corona.
-3. Import PB118_wrenchs_low_max.fbx into your project.
