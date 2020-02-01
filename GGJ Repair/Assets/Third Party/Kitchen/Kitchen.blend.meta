@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: bf1c6eeeecd95284c94c2f83092f4e51
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      74: 1989289236423521904
+    second: Default Take
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Appliance_Face_glass
+    second: {fileID: 2100000, guid: cd3784e0df654d3439055974ac2909ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Appliance_panel_lighting
+    second: {fileID: 2100000, guid: a1abfa1dfe7dcf643ac6d866886ea2e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_accent
+    second: {fileID: 2100000, guid: 8341109cf3fbc094a9d77e5bb05c5049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_gloss
+    second: {fileID: 2100000, guid: b00e2c7877414404b89034fe4fe310fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Book_Color_1
+    second: {fileID: 2100000, guid: 2e89e5ec1f867a44094b378f7d76a529, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Book_Color_2
+    second: {fileID: 2100000, guid: 606ffa661aacdf04a8027c41cdd0a2fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Book_Color_3
+    second: {fileID: 2100000, guid: 294bdd60af6b19849bbdbd87ae5ad293, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Book_Color_4
+    second: {fileID: 2100000, guid: ac85c17121d17974c985a3ffc9a93c51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cutting_board_Wood
+    second: {fileID: 2100000, guid: 089ca710c2ada064095150c22f3341c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Environment_Lights
+    second: {fileID: 2100000, guid: f84acd3922959474b8c1edb11e5fcf2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor
+    second: {fileID: 2100000, guid: 17d56a5dc6ec0604ab53e4031986f64d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fridge_Lights
+    second: {fileID: 2100000, guid: d3e77832d9a89694997b689b4eaaa29b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 9f7a0ab74ee7a8745b666392c25e0fe0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Gold_Bottle_Top
+    second: {fileID: 2100000, guid: 92c8eb6e5fedf0e409d76018d948330a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green_Wine_Bottle
+    second: {fileID: 2100000, guid: e1e95d712f46fed42a70c0e3ba8cf662, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey_Accent
+    second: {fileID: 2100000, guid: deb452544590f90439a6f7eaae4e57a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Inside_Drawers
+    second: {fileID: 2100000, guid: 11a77a21e17ac664cb75e8dae93b0bea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knife_Steel
+    second: {fileID: 2100000, guid: 012f13df1cebcc542988edf951a26302, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Picture_of_Bust
+    second: {fileID: 2100000, guid: 58dd1300e53bdd242bc79bdffe97e6fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Picture_of_Horse
+    second: {fileID: 2100000, guid: b12f0a218c91c274a87059cd8d7b4f9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Picture_of_Pocket_watch
+    second: {fileID: 2100000, guid: 08a8300fe24afce46b7d7f011e1d8b13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic_Cork
+    second: {fileID: 2100000, guid: 0897c2c41d04779458313df1ea120d61, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Wine
+    second: {fileID: 2100000, guid: 6c7f675240b372342be8c8592640f5f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Wine_Bottle_Glass
+    second: {fileID: 2100000, guid: 1c1c699186a4efb4da4c914de0c29a31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Wine_Label
+    second: {fileID: 2100000, guid: d2cfec3a91247794e9b9c4dd84d0b261, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Wine_Label_Gold
+    second: {fileID: 2100000, guid: c01ebe7cdf2f28943999d06de78db21f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel
+    second: {fileID: 2100000, guid: 951b44f5c3fbf8f4ebfc6313d806e988, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Strawberry_Wine_bottle_glass
+    second: {fileID: 2100000, guid: afd987df130960a4098d48da9c8ee846, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Strawberry_wine
+    second: {fileID: 2100000, guid: 68647cdf1f1d70d43bc9ece44cdc20c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tile
+    second: {fileID: 2100000, guid: b5aace333c166374d8845a9b9bc623fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tile_Inlet
+    second: {fileID: 2100000, guid: 88c38221a0b05fb418f545d3d6a2a7e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Color
+    second: {fileID: 2100000, guid: 6d9bb22de4f801b4fa556f7a046e1f0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: a5eb4d26ba315ff45bfabea3ceb9583f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_Quartz
+    second: {fileID: 2100000, guid: e73cda3f89c890a43b42996220134808, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_Wine
+    second: {fileID: 2100000, guid: 32109841ec1a2984f8068503c36c6149, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_Wine_Label_Gold
+    second: {fileID: 2100000, guid: 1e4f0903b4961974faff50c9bef4f401, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wine_Wine_Label_Red
+    second: {fileID: 2100000, guid: 0503ca2d06afb974aaae594f64a6e15b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Winr_label_Gold
+    second: {fileID: 2100000, guid: 6e2bbf91bb0e80c44a21b83184a8b808, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cherry
+    second: {fileID: 2100000, guid: 207757827af749f409c94f0560ac4ce8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stainless_Steel
+    second: {fileID: 2100000, guid: c03c6431b2e393a4f87c7618d1f49206, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
