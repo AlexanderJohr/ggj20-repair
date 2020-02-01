@@ -15,6 +15,10 @@ public class LookAtObject : MonoBehaviour
 
     public bool Throwmode = false;
 
+    [Header("Sound")]
+    public AudioClip ShortShot;
+    public AudioClip LongShot;
+
     private void Start()
     {
         power = Startpower;
@@ -32,14 +36,25 @@ public class LookAtObject : MonoBehaviour
 
             if (Input.GetMouseButton(0))
             {
-                power += 0.1f;
+                power += 0.4f;
             }
 
             if (Input.GetMouseButtonUp(0))
             {
+                if(power < 5)
+                {
+                    GetComponent<AudioSource>().clip = ShortShot;
+                    GetComponent<AudioSource>().Play();
+                }
+                else
+                {
+                    GetComponent<AudioSource>().clip = LongShot;
+                    GetComponent<AudioSource>().Play();
+                }
+
                 GameObject go = Instantiate(Paperball, Paperball.transform.position, Quaternion.identity);
                 go.SetActive(true);
-                go.GetComponent<Rigidbody>().AddForce(transform.forward * power, ForceMode.Impulse);
+                go.GetComponent<Rigidbody>().AddForce(transform.forward * power, ForceMode.VelocityChange);
                 power = Startpower;
                 //go.GetComponent<Rigidbody>().AddForce(transform.forward*100);
             }
