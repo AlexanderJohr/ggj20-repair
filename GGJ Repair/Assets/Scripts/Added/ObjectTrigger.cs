@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ObjectTrigger : MonoBehaviour
 {
+    enum KindOfObj { Lightswitch, Sink, Marmalade, Coin, Radio };
+
+    [SerializeField] private KindOfObj ThisObjectIs;
 
     public GameObject ParticleSys;
     public bool isLookedAt = false;
@@ -12,6 +15,10 @@ public class ObjectTrigger : MonoBehaviour
     public bool CanBeActivated = true;
     public int FullTimer = 50;
     public int currentTimer = 0;
+
+    public AudioClip ObjectSound;
+    public AudioClip[] RadioSounds;
+    public int RadioIndex = 0;
 
 
     private void Start()
@@ -35,13 +42,14 @@ public class ObjectTrigger : MonoBehaviour
                 ActivateEffect();
                 ParticleIsRunning = true;
             }
+
             isLookedAt = false;
 
             if (Input.GetMouseButtonDown(0) & CanBeActivated)
             {
                 CanBeActivated = false;
                 DeactivateEffect();
-                Debug.Log("boop");
+                ObjectReaction();
             }
         }
         else
@@ -52,6 +60,58 @@ public class ObjectTrigger : MonoBehaviour
                 ParticleIsRunning = false;
             }
         }
+    }
+
+    public void ObjectReaction()
+    {
+        if(ThisObjectIs != KindOfObj.Radio)
+        {
+            GetComponent<AudioSource>().clip = ObjectSound;
+            GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            if(RadioIndex < RadioSounds.Length - 1)
+            {
+                RadioIndex++;
+            }
+            else
+            {
+                RadioIndex = 0;
+            }
+
+            AudioClip currAudio = RadioSounds[RadioIndex];
+            //Radio
+            GetComponent<AudioSource>().clip = currAudio;
+            GetComponent<AudioSource>().Play();
+        }
+
+        if (ThisObjectIs == KindOfObj.Lightswitch)
+        {
+            //I'm the light and darkness
+        }
+
+        if (ThisObjectIs == KindOfObj.Coin)
+        {
+            //I'm a coin
+        }
+
+        if(ThisObjectIs == KindOfObj.Marmalade)
+        {
+            //I'm marmalade
+        }
+
+        if(ThisObjectIs == KindOfObj.Radio)
+        {
+            //I'm radio
+        }
+
+        if(ThisObjectIs == KindOfObj.Sink)
+        {
+            //I'm sink
+        }
+
+
     }
 
     public void YouAreBeingWatched()
