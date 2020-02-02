@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Paperball
   - Plumber
+  - Radio
   layers:
   - Default
   - TransparentFX
