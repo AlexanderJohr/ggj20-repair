@@ -9,6 +9,7 @@ public class Plumber : MonoBehaviour
     public float MaxRage;
     public float CurrentRage;
 	public GameObject plumber;
+	public GameObject gameOverScreen;
 
 	private float timeUntilScratch = 15;
 
@@ -16,11 +17,11 @@ public class Plumber : MonoBehaviour
     {
         CurrentTime = MaxTime;
         CurrentRage = 0;
+		gameOverScreen.SetActive(false);
     }
 
     void Update()
     {
-		
 		timeUntilScratch-= Time.deltaTime;
 		if(timeUntilScratch < 0){
 			timeUntilScratch = 15;
@@ -51,11 +52,13 @@ public class Plumber : MonoBehaviour
     public void RepairFinished()
     {
         Debug.Log("Repair Finished");
+		gameOverScreen.SetActive(true);
     }
 
     public void Ragequit()
     {
         Debug.Log("Ragequit");
+		gameOverScreen.SetActive(true);
     }
 
     public void AddRage(int addedRage)
