@@ -8,7 +8,9 @@ public class Plumber : MonoBehaviour
     public float CurrentTime;
     public float MaxRage;
     public float CurrentRage;
+	public GameObject plumber;
 
+	private float timeUntilScratch = 15;
 
     void Start()
     {
@@ -18,6 +20,13 @@ public class Plumber : MonoBehaviour
 
     void Update()
     {
+		
+		timeUntilScratch-= Time.deltaTime;
+		if(timeUntilScratch < 0){
+			timeUntilScratch = 15;
+			plumber.GetComponent<Animator>().SetTrigger("scratch");
+		}
+		
         if(CurrentRage <= MaxRage)
         {
             if (CurrentTime > 0)

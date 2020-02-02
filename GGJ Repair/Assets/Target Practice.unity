@@ -2871,6 +2871,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237161584}
   m_CullTransparentMesh: 0
+--- !u!1 &239336406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2ce51a3b9ae056b4bbf755ffa9c3bdb3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1994526392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &239336407
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239336406}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4facd5d2eb4b73b48907101220ad83d9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &328860531
 GameObject:
   m_ObjectHideFlags: 0
@@ -44127,7 +44152,6 @@ MonoBehaviour:
   m_Script: {fileID: 1936231526}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Entries: []
 --- !u!4 &1340495531
 Transform:
   m_ObjectHideFlags: 19
@@ -44513,6 +44537,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8071481496424976176, guid: faf2af0748854de4f89a2ce41afefedb,
+        type: 3}
+      propertyPath: plumber
+      value: 
+      objectReference: {fileID: 239336406}
     - target: {fileID: 8071481496424976177, guid: faf2af0748854de4f89a2ce41afefedb,
         type: 3}
       propertyPath: m_LocalPosition.x
