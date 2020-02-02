@@ -41,7 +41,7 @@ public class LookAtObject : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-                if(power < 5)
+                if(power < 8)
                 {
                     GetComponent<AudioSource>().clip = ShortShot;
                     GetComponent<AudioSource>().Play();
