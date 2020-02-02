@@ -25,6 +25,11 @@ public class AddRageOrTime : MonoBehaviour
             plumb.AddTime(TimeToAdd);
             PlaySound();
         }
+        if (!collider.isTrigger && collision.gameObject.tag == "Cookie")
+        {
+            plumb.AddRage(-RageToAdd);
+            //PlaySound();
+        }
     }
 
     private void OnTriggerEnter(Collider other)

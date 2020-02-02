@@ -44152,6 +44152,7 @@ MonoBehaviour:
   m_Script: {fileID: 1936231526}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Entries: []
 --- !u!4 &1340495531
 Transform:
   m_ObjectHideFlags: 19
@@ -44452,6 +44453,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 173230, guid: 3e7e2b6a9fd80fe47b85ed6e9fddde80, type: 3}
+      propertyPath: m_TagString
+      value: Cookie
+      objectReference: {fileID: 0}
     - target: {fileID: 414608, guid: 3e7e2b6a9fd80fe47b85ed6e9fddde80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -44513,10 +44518,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: ff40b5a06fa3b134fb73a170f30e7cd2, type: 2}
     m_RemovedComponents:
-    - {fileID: 5437732, guid: 3e7e2b6a9fd80fe47b85ed6e9fddde80, type: 3}
-    - {fileID: 11499482, guid: 3e7e2b6a9fd80fe47b85ed6e9fddde80, type: 3}
-    - {fileID: 11425712, guid: 3e7e2b6a9fd80fe47b85ed6e9fddde80, type: 3}
-    - {fileID: 6468952, guid: 3e7e2b6a9fd80fe47b85ed6e9fddde80, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 3e7e2b6a9fd80fe47b85ed6e9fddde80, type: 3}
 --- !u!4 &1432031724 stripped
 Transform:
