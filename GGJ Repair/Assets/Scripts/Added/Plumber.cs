@@ -8,31 +8,32 @@ public class Plumber : MonoBehaviour
     public float CurrentTime;
     public float MaxRage;
     public float CurrentRage;
-	public GameObject plumber;
-	public GameObject gameOverScreen;
+    public GameObject plumber;
+    public GameObject gameOverScreen;
 
-	private float timeUntilScratch = 15;
+    private float timeUntilScratch = 15;
 
     void Start()
     {
         CurrentTime = MaxTime;
         CurrentRage = 0;
-		gameOverScreen.SetActive(false);
+        gameOverScreen.SetActive(false);
     }
 
     void Update()
     {
-		timeUntilScratch-= Time.deltaTime;
-		if(timeUntilScratch < 0){
-			timeUntilScratch = 15;
-			plumber.GetComponent<Animator>().SetTrigger("scratch");
-		}
-		
-        if(CurrentRage <= MaxRage)
+        timeUntilScratch -= Time.deltaTime;
+        if (timeUntilScratch < 0)
+        {
+            timeUntilScratch = 15;
+            plumber.GetComponent<Animator>().SetTrigger("scratch");
+        }
+
+        if (CurrentRage <= MaxRage)
         {
             if (CurrentTime > 0)
             {
-                CurrentTime-= Time.deltaTime;
+                CurrentTime -= Time.deltaTime;
                 CurrentRage -= Time.deltaTime;
 
             }
@@ -52,37 +53,23 @@ public class Plumber : MonoBehaviour
     public void RepairFinished()
     {
         Debug.Log("Repair Finished");
-		gameOverScreen.SetActive(true);
+        gameOverScreen.SetActive(true);
     }
 
     public void Ragequit()
     {
         Debug.Log("Ragequit");
-		gameOverScreen.SetActive(true);
+        gameOverScreen.SetActive(true);
     }
 
     public void AddRage(int addedRage)
     {
-        if (CurrentRage + addedRage <= MaxRage && CurrentRage + addedRage >= 0)
-        {
-            CurrentRage += addedRage;
-        }
-        else
-        {
-            if(CurrentRage + addedRage > MaxRage)
-            {
-                CurrentRage = MaxRage;
-            }
-            else
-            {
-                CurrentRage = 0;
-            }
-        }
+        CurrentRage += addedRage;
     }
 
     public void AddTime(float timeboni)
     {
-        if(CurrentTime + timeboni <= MaxTime && CurrentTime + timeboni >= 0)
+        if (CurrentTime + timeboni <= MaxTime && CurrentTime + timeboni >= 0)
         {
             CurrentTime += timeboni;
         }
@@ -91,12 +78,13 @@ public class Plumber : MonoBehaviour
             if (CurrentTime + timeboni >= MaxTime)
             {
                 CurrentTime = MaxTime;
-            } else
+            }
+            else
             {
                 CurrentTime = 0;
             }
         }
-        
+
     }
 
     /*private void OnTriggerEnter(Collider other)

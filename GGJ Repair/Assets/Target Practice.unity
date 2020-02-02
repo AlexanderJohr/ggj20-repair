@@ -26029,6 +26029,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plumber (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8344738746583078507, guid: faf2af0748854de4f89a2ce41afefedb,
+        type: 3}
+      propertyPath: HappyValue
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faf2af0748854de4f89a2ce41afefedb, type: 3}
 --- !u!1 &1597494054
