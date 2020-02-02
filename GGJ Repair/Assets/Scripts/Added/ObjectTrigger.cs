@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectTrigger : MonoBehaviour
 {
-    enum KindOfObj { Lightswitch, Sink, Marmalade, Coin, Radio };
+    enum KindOfObj { Lightswitch, Sink, Marmalade, Coin, Radio, Cookie, TrashBin };
 
     [SerializeField] private KindOfObj ThisObjectIs;
 
@@ -119,6 +119,20 @@ public class ObjectTrigger : MonoBehaviour
         }
 
 
+        if (ThisObjectIs == KindOfObj.Cookie)
+        {
+            Object.FindObjectOfType<LookAtObject>().Throwmode = true;
+            Object.FindObjectOfType<LookAtObject>().ThrowCookie = true;
+            Object.FindObjectOfType<LookAtObject>().ThrowPaper = false;
+
+        }
+        if (ThisObjectIs == KindOfObj.TrashBin)
+        {
+            Object.FindObjectOfType<LookAtObject>().Throwmode = true;
+            Object.FindObjectOfType<LookAtObject>().ThrowPaper = true;
+            Object.FindObjectOfType<LookAtObject>().ThrowCookie = false;
+
+        }
     }
 
     public void YouAreBeingWatched()
