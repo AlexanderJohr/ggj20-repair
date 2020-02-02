@@ -18,7 +18,7 @@ public class Plumber : MonoBehaviour
 
     void Update()
     {
-        if(CurrentRage < MaxRage)
+        if(CurrentRage <= MaxRage)
         {
             if (CurrentTime > 0)
             {
@@ -51,7 +51,14 @@ public class Plumber : MonoBehaviour
 
     public void AddRage(int addedRage)
     {
-        CurrentRage += addedRage;
+        if (CurrentRage + addedRage <= MaxRage)
+        {
+            CurrentRage += addedRage;
+        }
+        else
+        {
+            CurrentRage = MaxRage;
+        }
     }
 
     public void AddTime(float timeboni)
@@ -59,7 +66,7 @@ public class Plumber : MonoBehaviour
         CurrentTime += timeboni;
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         Debug.Log("OnTriggerEnter");
         if(other.gameObject.tag == "Paperball")
@@ -69,5 +76,5 @@ public class Plumber : MonoBehaviour
             AddRage(20);
             AddTime(3);
         }
-    }
+    }*/
 }
