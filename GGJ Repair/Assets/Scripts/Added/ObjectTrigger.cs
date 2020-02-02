@@ -20,6 +20,8 @@ public class ObjectTrigger : MonoBehaviour
     public AudioClip[] RadioSounds;
     public int RadioIndex = 0;
 
+    public Light light;
+
 
     private void Start()
     {
@@ -88,6 +90,11 @@ public class ObjectTrigger : MonoBehaviour
 
         if (ThisObjectIs == KindOfObj.Lightswitch)
         {
+            Object.FindObjectOfType< Plumber>().AddRage(10);
+            Object.FindObjectOfType<Plumber>().AddTime(30);
+
+
+            light.enabled = !light.enabled;
             //I'm the light and darkness
         }
 
