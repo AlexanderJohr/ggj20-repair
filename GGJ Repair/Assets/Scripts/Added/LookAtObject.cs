@@ -10,7 +10,7 @@ public class LookAtObject : MonoBehaviour
     public GameObject ThrowIndicator;
     public GameObject ThrowIndicatorCookie;
 
-    
+
     public GameObject Paperball;
     public GameObject Cookie;
 
@@ -26,6 +26,8 @@ public class LookAtObject : MonoBehaviour
     [Header("Sound")]
     public AudioClip ShortShot;
     public AudioClip LongShot;
+    public AudioClip ShortShotCookie;
+    public AudioClip LongShotCookie;
 
     private void Start()
     {
@@ -58,15 +60,32 @@ public class LookAtObject : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-                if(power < 8)
+                if (ThrowPaper)
                 {
-                    GetComponent<AudioSource>().clip = ShortShot;
-                    GetComponent<AudioSource>().Play();
+                    if (power < 8)
+                    {
+                        GetComponent<AudioSource>().clip = ShortShot;
+                        GetComponent<AudioSource>().Play();
+                    }
+                    else
+                    {
+                        GetComponent<AudioSource>().clip = LongShot;
+                        GetComponent<AudioSource>().Play();
+                    }
                 }
-                else
+
+                if (ThrowCookie)
                 {
-                    GetComponent<AudioSource>().clip = LongShot;
-                    GetComponent<AudioSource>().Play();
+                    if (power < 8)
+                    {
+                        GetComponent<AudioSource>().clip = ShortShotCookie;
+                        GetComponent<AudioSource>().Play();
+                    }
+                    else
+                    {
+                        GetComponent<AudioSource>().clip = LongShotCookie;
+                        GetComponent<AudioSource>().Play();
+                    }
                 }
 
                 if (ThrowPaper)
@@ -85,7 +104,7 @@ public class LookAtObject : MonoBehaviour
                     power = Startpower;
                 }
 
-                
+
                 //go.GetComponent<Rigidbody>().AddForce(transform.forward*100);
             }
         }
@@ -102,7 +121,7 @@ public class LookAtObject : MonoBehaviour
 
             if (Physics.Raycast(transform.position, transform.forward, out RayToObject, 500f, 11, QueryTriggerInteraction.Collide))
             {
-                if(RayToObject.collider.gameObject.GetComponent<ObjectTrigger>() != null) RayToObject.collider.gameObject.GetComponent<ObjectTrigger>().YouAreBeingWatched();
+                if (RayToObject.collider.gameObject.GetComponent<ObjectTrigger>() != null) RayToObject.collider.gameObject.GetComponent<ObjectTrigger>().YouAreBeingWatched();
             }
 
             if (Input.GetMouseButtonDown(1))
@@ -110,8 +129,8 @@ public class LookAtObject : MonoBehaviour
                 Throwmode = true;
             }
         }
-        
-        
+
+
 
     }
 }
