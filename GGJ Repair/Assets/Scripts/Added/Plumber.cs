@@ -51,19 +51,40 @@ public class Plumber : MonoBehaviour
 
     public void AddRage(int addedRage)
     {
-        if (CurrentRage + addedRage <= MaxRage)
+        if (CurrentRage + addedRage <= MaxRage && CurrentRage + addedRage >= 0)
         {
             CurrentRage += addedRage;
         }
         else
         {
-            CurrentRage = MaxRage;
+            if(CurrentRage + addedRage > MaxRage)
+            {
+                CurrentRage = MaxRage;
+            }
+            else
+            {
+                CurrentRage = 0;
+            }
         }
     }
 
     public void AddTime(float timeboni)
     {
-        CurrentTime += timeboni;
+        if(CurrentTime + timeboni <= MaxTime && CurrentTime + timeboni >= 0)
+        {
+            CurrentTime += timeboni;
+        }
+        else
+        {
+            if (CurrentTime + timeboni >= MaxTime)
+            {
+                CurrentTime = MaxTime;
+            } else
+            {
+                CurrentTime = 0;
+            }
+        }
+        
     }
 
     /*private void OnTriggerEnter(Collider other)
