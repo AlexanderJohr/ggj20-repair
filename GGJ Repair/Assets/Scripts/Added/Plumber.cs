@@ -9,11 +9,9 @@ public class Plumber : MonoBehaviour
     public float MaxRage;
     public float CurrentRage;
 
-    private int multiplyTime = 10;
 
     void Start()
     {
-        MaxTime *= multiplyTime;
         CurrentTime = MaxTime;
         CurrentRage = 0;
     }
@@ -24,7 +22,9 @@ public class Plumber : MonoBehaviour
         {
             if (CurrentTime > 0)
             {
-                CurrentTime--;
+                CurrentTime-= Time.deltaTime;
+                CurrentRage -= Time.deltaTime;
+
             }
             else if (CurrentTime <= 0)
             {
@@ -54,16 +54,20 @@ public class Plumber : MonoBehaviour
         CurrentRage += addedRage;
     }
 
-    public void AddTime(int timeboni)
+    public void AddTime(float timeboni)
     {
-        CurrentTime += timeboni*multiplyTime;
+        CurrentTime += timeboni;
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("OnTriggerEnter");
         if(other.gameObject.tag == "Paperball")
         {
+            Debug.Log("Paperball");
+
             AddRage(20);
+            AddTime(3);
         }
     }
 }
